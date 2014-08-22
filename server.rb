@@ -51,6 +51,6 @@ post '/new' do
     redirect '/'
   else
     session[:message] = "We already know about this. Send us something different"
-    redirect '/new'
+    erb :new
   end
 end
