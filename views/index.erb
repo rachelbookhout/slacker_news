@@ -1,0 +1,18 @@
+<% @articles.each do |article| %>
+
+  <li>
+    <a href= "<%= article["Url"]%>" target = "_blank">
+      <%= article["Name"]%>
+    </a>
+
+    <span class="source"><a href="<%= article["Url"]%>" target = "_blank">(<%= article["Url"]%>)</a></span>
+
+    <p class = "info">
+      63 points by lyime 56 minutes ago |
+      <a href= "comments.html"> 17 comments </a> </p>
+    <p class = "description">
+      <%= article["Description"]%>
+    </p>
+  </li>
+
+<% end %>

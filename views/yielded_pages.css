@@ -1,0 +1,12 @@
+
+.search{
+  text-align: center;
+}
+.info {
+  font-color: gray;
+}
+.description {
+  font-size: 40px;
+  color: red;
+  font-weight: italic;
+}

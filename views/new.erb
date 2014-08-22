@@ -1,0 +1,16 @@
+
+<form action="/new" method="post">
+<h2> Submit your Article! </h2>
+<label for= "name">Article Name: <label>
+<input type = "text" id="article_name" name = "article_name" value="<%@name%>" required/></label></br></br>
+<label for = "url"> URL Link:       </label></form>
+<input type = "url" id= "url" name= "url" required/></br></br>
+<label for = "description">Description:  </label>
+<input type = "text" id= "description" name= "description" min = "20" value = "<%@description%>" required title = "20 characters minimum"/>
+<input type = "submit"/>
+</form>
+
+<%if session[:message] %>
+<P><%= session[:message]%></P>
+<%session[:message]=nil %>
+<%end%>
